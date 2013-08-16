@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_mako,$(TARGET_PRODUCT))
+ifeq (pa_e975,$(TARGET_PRODUCT))
 
 # Define PA bootanimation size
 PARANOID_BOOTANIMATION_NAME := XHDPI
@@ -35,6 +35,7 @@ EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_e975
+PRODUCT_DEVICE := e975
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-E975
 PRODUCT_MANUFACTURER := LGE
