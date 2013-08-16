@@ -79,3 +79,6 @@ endif
 ifeq (pa_jfltecan,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_jfltecan.mk
 endif
+ifeq (pa_e975,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_e975.mk
+endif
