@@ -10,19 +10,13 @@
         "account":      "RemixPA",
         "repository":   "android_device_lge_e975",
         "target_path":  "device/lge/e975",
-        "revision":     "cm-10.2"
+        "revision":     "jb4.3"
     },
     {
         "remote":       "github",
         "account":      "TheMuppets",
         "repository":   "proprietary_vendor_lge",
         "target_path":  "vendor/lge",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "cm",
-        "repository":   "lge-kernel-gproj",
-        "target_path":  "kernel/lge/gproj",
         "revision":     "cm-10.2"
     }
 ]

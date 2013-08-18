@@ -37,12 +37,6 @@
     },
     {
         "remote":       "cm",
-        "repository":   "android_packages_inputmethods_LatinIME",
-        "target_path":  "packages/inputmethods/LatinIME",
-        "revision":     "cm-10.2"
-    },
-    {
-        "remote":       "cm",
         "repository":   "android_external_libncurses",
         "target_path":  "external/libncurses",
         "revision":     "cm-10.2"

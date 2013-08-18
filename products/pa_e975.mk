@@ -27,6 +27,9 @@ PREFS_FROM_SOURCE ?= true
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
+# inherit from device
+-include device/lge/e975/BoardConfig.mk
+
 # Inherit AOSP device configuration
 $(call inherit-product, device/lge/e975/e975.mk)
 
