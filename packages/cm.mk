@@ -14,6 +14,10 @@
 #    SoundRecorder \
 #    Basic
 
+# RemixPA addons
+PRODUCT_PACKAGES += \
+    Halo
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     openvpn \
