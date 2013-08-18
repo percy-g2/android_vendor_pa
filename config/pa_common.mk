@@ -12,6 +12,9 @@ PRODUCT_COPY_FILES += \
 # userinit support
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    
+PRODUCT_COPY_FILES := \
+    vendor/pa/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
