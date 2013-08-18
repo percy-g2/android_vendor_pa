@@ -29,6 +29,18 @@ PRODUCT_COPY_FILES += \
 # Bring in all video files
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
+# prebuilt BaiduInput
+PRODUCT_COPY_FILES += \
+        vendor/pa/prebuilt/common/apk/Baiduinput.apk:system/app/Baiduinput.apk
+        
+# BaiduInput libs
+PRODUCT_COPY_FILES += \
+        vendor/pa/prebuilt/common/lib/libchiperencoder_v1_1.so:system/lib/libchiperencoder_v1_1.so \
+        vendor/pa/prebuilt/common/lib/libkpencore.so:system/lib/libkpencore.so \
+        vendor/pa/prebuilt/common/lib/librabjni-1.so:system/lib/librabjni-1.so \
+        vendor/pa/prebuilt/common/lib/libshare_v2.so:system/lib/libshare_v2.so \
+        vendor/pa/prebuilt/common/lib/libtmfe30.so:system/lib/libtmfe30.so \
+
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
     PRODUCT_COPY_FILES += \
