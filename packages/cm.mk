@@ -16,7 +16,7 @@
 
 # RemixPA addons
 PRODUCT_PACKAGES += \
-    Halo
+    HALO
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
