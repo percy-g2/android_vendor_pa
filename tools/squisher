@@ -110,8 +110,8 @@ cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK
 echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
 
 # Inject build manifest
-printf "Injecting build manifest..."
-( cd $ANDROID_BUILD_TOP; repo manifest -o $REPACK/ota/system/etc/build-manifest.xml -r )
+#printf "Injecting build manifest..."
+#( cd $ANDROID_BUILD_TOP; repo manifest -o $REPACK/ota/system/etc/build-manifest.xml -r )
 
 # Copy kernel files
 if [ -f "$ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img" ]; then
