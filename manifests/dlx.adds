@@ -1,0 +1,35 @@
+[
+    {
+        "remote":       "cm",
+        "repository":   "android_packages_apps_Torch",
+        "target_path":  "packages/apps/Torch",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "RemixPA",
+        "repository":   "android_device_htc_dlx",
+        "target_path":  "device/htc/dlx",
+        "revision":     "jb4.3"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_device_htc_msm8960-common",
+        "target_path":  "device/htc/msm8960-common",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CM10DNA",
+        "repository":   "android_vendor_htc_dlx",
+        "target_path":  "vendor/htc/dlx",
+        "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "github",
+        "account":      "CM10DNA",
+        "repository":   "android_kernel_htc_dlx",
+        "target_path":  "kernel/htc/dlx",
+        "revision":     "cm-10.2"
+    }
+]
