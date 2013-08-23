@@ -31,10 +31,10 @@ PRODUCT_PACKAGE_OVERLAYS += device/htc/dlx/overlay
 PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # PA OVERLAY_TARGET
-OVERLAY_TARGET := pa_xhdpi
+OVERLAY_TARGET := pa_xxhdpi
 
 # Build paprefs from sources
-PREFS_FROM_SOURCE ?= false
+PREFS_FROM_SOURCE ?= true
 
 # Include CM extras
 EXTRA_CM_PACKAGES ?= true
