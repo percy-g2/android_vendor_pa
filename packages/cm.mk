@@ -16,7 +16,8 @@
 
 # RemixPA addons
 PRODUCT_PACKAGES += \
-    HALO
+    HALO \
+    Trebuchet
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
