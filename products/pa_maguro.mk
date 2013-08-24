@@ -30,6 +30,9 @@ include vendor/pa/config/pa_common.mk
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
+
 # Override AOSP build properties
 PRODUCT_NAME := pa_maguro
 PRODUCT_BRAND := Google
