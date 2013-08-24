@@ -18,7 +18,9 @@ PRODUCT_COPY_FILES += \
 # RemixPA addons
 PRODUCT_PACKAGES += \
     HALO \
-    Trebuchet
+    Trebuchet \
+    CMFileManager \
+    DSPManager
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
