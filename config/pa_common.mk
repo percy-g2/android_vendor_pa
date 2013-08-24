@@ -91,6 +91,10 @@ endif
 
 BOARD := $(subst pa_,,$(TARGET_PRODUCT))
 
+# Mokee PhoneLoc
+PRODUCT_COPY_FILES +=  \
+    vendor/pa/prebuilt/common/media/mokee-phoneloc.dat:system/media/mokee-phoneloc.dat
+
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/$(TARGET_PRODUCT)
