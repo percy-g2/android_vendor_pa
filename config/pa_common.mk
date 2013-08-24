@@ -39,7 +39,7 @@ PRODUCT_COPY_FILES += \
         vendor/pa/prebuilt/common/lib/libkpencore.so:system/lib/libkpencore.so \
         vendor/pa/prebuilt/common/lib/librabjni-1.so:system/lib/librabjni-1.so \
         vendor/pa/prebuilt/common/lib/libshare_v2.so:system/lib/libshare_v2.so \
-        vendor/pa/prebuilt/common/lib/libtmfe30.so:system/lib/libtmfe30.so \
+        vendor/pa/prebuilt/common/lib/libtmfe30.so:system/lib/libtmfe30.so
 
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)

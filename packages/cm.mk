@@ -6,13 +6,14 @@
 #    Superuser \
 #    su
 
-# Optional CM packages
-#PRODUCT_PACKAGES += \
-#    VoicePlus \
-#    VideoEditor \
-#    VoiceDialer \
-#    SoundRecorder \
-#    Basic
+# Wallpaper in prbuilt
+PRODUCT_COPY_FILES += \
+        vendor/pa/prebuilt/common/apk/BasicDreams.apk:system/app/BasicDreams.apk \
+        vendor/pa/prebuilt/common/apk/Galaxy4.apk:system/app/Galaxy4.apk \
+        vendor/pa/prebuilt/common/apk/HoloSpiralWallpaper.apk:system/app/HoloSpiralWallpaper.apk \
+        vendor/pa/prebuilt/common/apk/LiveWallpapers.apk:system/app/LiveWallpapers.apk \
+        vendor/pa/prebuilt/common/apk/LiveWallpapersPicker.apk:system/app/LiveWallpapersPicker.apk \
+        vendor/pa/prebuilt/common/apk/PhaseBeam.apk:system/app/PhaseBeam.apk
 
 # RemixPA addons
 PRODUCT_PACKAGES += \
