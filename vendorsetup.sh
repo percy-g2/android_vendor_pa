@@ -26,4 +26,3 @@ add_lunch_combo pa_jfltetmo-userdebug
 add_lunch_combo pa_jflteatt-userdebug
 add_lunch_combo pa_jfltecan-userdebug
 add_lunch_combo pa_hercules-userdebug
->>>>>>> FETCH_HEAD
