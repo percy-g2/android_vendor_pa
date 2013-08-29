@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
     HALO \
     Trebuchet \
     CMFileManager \
-    DSPManager
+    DSPManager \
+    libcyanogen-dsp
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
