@@ -112,3 +112,12 @@ endif
 ifeq (pa_umts_spyder,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_umts_spyder.mk
 endif
+ifeq (pa_i9100g,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_i9100g.mk
+endif
+ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_galaxysmtd.mk
+endif
+ifeq (pa_ariesve,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_ariesve.mk
+endif

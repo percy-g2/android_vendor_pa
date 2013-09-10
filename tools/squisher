@@ -108,6 +108,7 @@ mkdir $REPACK/ota/system/etc/paranoid/preferences/images
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
 cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 echo "ro.pa=true"  >> $REPACK/ota/system/build.prop
+echo "ro.pa.device=${TARGET_PRODUCT:3}"  >> $REPACK/ota/system/build.prop
 
 # Inject build manifest
 #printf "Injecting build manifest..."
@@ -119,6 +120,10 @@ if [ -f "$ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img" 
     echo
     cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img $REPACK/ota/
     cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/* $REPACK/ota/system/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/bin/* $REPACK/ota/system/bin/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/lib/* $REPACK/ota/system/lib/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/lib/modules/* $REPACK/ota/system/lib/modules/
+    cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/extras $REPACK/ota/system/
 fi
 
 # Pack it up and sign
