@@ -1,4 +1,4 @@
-# Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2012 ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,35 +13,34 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
+ifeq (pa_geeb,$(TARGET_PRODUCT))
 
 # Define PA bootanimation size
-PARANOID_BOOTANIMATION_NAME := HDPI
+PARANOID_BOOTANIMATION_NAME := XHDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_galaxysmtd
+OVERLAY_TARGET := pa_i9300
 
 # Build paprefs from sources
-PREFS_FROM_SOURCE ?= true
+PREFS_FROM_SOURCE ?= false
 
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# Include ParanoidAndroid repos configuration
--include vendor/pa/config/pa_addons.mk
-
 # Inherit AOSP device configuration
-$(call inherit-product, device/samsung/galaxysmtd/full_galaxysmtd.mk)
+$(call inherit-product, device/lge/geeb/full_geeb.mk)
 
-# CM Package Extras
--include vendor/pa/packages/cm.mk
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_galaxysmtd
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := GT-I9000
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9000 TARGET_DEVICE=GT-I9000 BUILD_FINGERPRINT="samsung/GT-I9000/GT-I9000:2.3.5/GINGERBREAD/XXJVT:user/release-keys" PRIVATE_BUILD_DESC="GT-I9000-user 2.3.5 GINGERBREAD XXJVT release-keys"
+PRODUCT_NAME := pa_geeb
+PRODUCT_BRAND := LGE
+PRODUCT_MODEL := LG Optimus G
+PRODUCT_MANUFACTURER := LGE
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=gee BUILD_FINGERPRINT="lge/gee/geeb:4.3/JSS15J/737497:user/release-keys" PRIVATE_BUILD_DESC="gee-user 4.3 JSS15J 737497 release-keys"
+
+# Include ParanoidAndroid repos configuration
+include vendor/pa/config/pa_addons.mk
 
 endif
-
