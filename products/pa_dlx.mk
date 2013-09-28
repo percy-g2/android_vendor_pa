@@ -18,9 +18,6 @@ $(call inherit-product, device/htc/dlx/full_dlx.mk)
 # Inherit CDMA common stuff.
 $(call inherit-product, vendor/pa/config/cdma.mk)
 
-# Inherit common Verizon Wireless Perms and Lib
-# $(call inherit-product, vendor/pa/config/vzw.mk)
-
 # Inherit RemixPA common bits
 $(call inherit-product, vendor/pa/config/pa_common.mk)
 
@@ -40,7 +37,7 @@ PREFS_FROM_SOURCE ?= false
 EXTRA_CM_PACKAGES ?= true
 
 # Release name
-PRODUCT_RELEASE_NAME := HTC-DNA
+PRODUCT_RELEASE_NAME := dlx
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dlx
