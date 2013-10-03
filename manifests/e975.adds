@@ -20,9 +20,10 @@
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "cm",
+        "remote":       "github",
+        "account":      "RemixPA",
         "repository":   "android_device_lge_gproj-common",
         "target_path":  "device/lge/gproj-common",
-        "revision":     "cm-10.2"
+        "revision":     "jb4.3"
     }
 ]
