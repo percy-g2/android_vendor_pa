@@ -18,5 +18,11 @@
         "repository":   "proprietary_vendor_lge",
         "target_path":  "vendor/lge",
         "revision":     "cm-10.2"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_device_lge_gproj-common",
+        "target_path":  "device/lge/gproj-common",
+        "revision":     "cm-10.2"
     }
 ]
