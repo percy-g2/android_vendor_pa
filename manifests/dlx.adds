@@ -6,11 +6,10 @@
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "github",
-        "account":      "RemixPA",
+        "remote":       "cm",
         "repository":   "android_device_htc_dlx",
         "target_path":  "device/htc/dlx",
-        "revision":     "jb4.3"
+        "revision":     "cm-10.2"
     },
     {
         "remote":       "cm",
@@ -20,16 +19,15 @@
     },
     {
         "remote":       "github",
-        "account":      "CM10DNA",
+        "account":      "Mokee",
         "repository":   "android_vendor_htc_dlx",
         "target_path":  "vendor/htc/dlx",
-        "revision":     "cm-10.2"
+        "revision":     "jb-mr2_mkt"
     },
     {
-        "remote":       "github",
-        "account":      "CM10DNA",
-        "repository":   "android_kernel_htc_dlx",
-        "target_path":  "kernel/htc/dlx",
+        "remote":       "cm",
+        "repository":   "android_kernel_htc_m7",
+        "target_path":  "kernel/htc/m7",
         "revision":     "cm-10.2"
     }
 ]
