@@ -18,16 +18,16 @@
         "revision":     "cm-10.2"
     },
     {
-        "remote":       "cm",
-        "repository":   "android_vendor_htc_dlx",
-        "target_path":  "vendor/htc/dlx",
-        "revision":     "cm-10.2"
-    },
-    {
         "remote":       "github",
         "account":      "Mokee",
-        "repository":   "android_kernel_htc_dlx",
-        "target_path":  "kernel/htc/dlx",
+        "repository":   "android_vendor_htc_dlx",
+        "target_path":  "vendor/htc/dlx",
         "revision":     "jb-mr2_mkt"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "android_kernel_htc_m7",
+        "target_path":  "kernel/htc/m7",
+        "revision":     "cm-10.2"
     }
 ]
