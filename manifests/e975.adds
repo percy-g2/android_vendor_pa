@@ -25,5 +25,11 @@
         "repository":   "android_device_lge_gproj-common",
         "target_path":  "device/lge/gproj-common",
         "revision":     "jb4.3"
+    },
+    {
+        "remote":       "cm",
+        "repository":   "lge-kernel-gproj",
+        "target_path":  "kernel/lge/gproj",
+        "revision":     "cm-10.2"
     }
 ]

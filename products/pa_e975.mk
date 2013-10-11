@@ -27,22 +27,15 @@ PREFS_FROM_SOURCE ?= false
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
-# inherit from device
--include device/lge/e975/BoardConfig.mk
-
 # Inherit AOSP device configuration
 $(call inherit-product, device/lge/e975/e975.mk)
 
-# Include CM extras
-EXTRA_CM_PACKAGES ?= true
-
 # Override AOSP build properties
 PRODUCT_NAME := pa_e975
-PRODUCT_DEVICE := e975
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-E975
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=geehrc_open_eu BUILD_FINGERPRINT=lge/geehrc_open_eu/geehrc:4.1.2/JZO54K/E97510b.1360741472:user/release-keys PRIVATE_BUILD_DESC="geehrc_open_eu-user 4.1.2 JZO54K E97510b.1360741472 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=geehrc_open_eu TARGET_DEVICE=e975 BUILD_FINGERPRINT=lge/geehrc_open_eu/geehrc:4.1.2/JZO54K/E97510b.1360741472:user/release-keys PRIVATE_BUILD_DESC="geehrc_open_eu-user 4.1.2 JZO54K E97510b.1360741472 release-keys"
 
 # Include ParanoidAndroid repos configuration
 include vendor/pa/config/pa_addons.mk
