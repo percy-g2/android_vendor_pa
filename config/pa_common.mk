@@ -38,7 +38,7 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # prebuilt BaiduInput
 PRODUCT_COPY_FILES += \
-        vendor/pa/prebuilt/common/apk/Baiduinput.apk:system/app/Baiduinput.apk
+        vendor/pa/prebuilt/common/apk/BaiduInput.apk:system/app/BaiduInput.apk
         
 # BaiduInput libs
 PRODUCT_COPY_FILES += \
