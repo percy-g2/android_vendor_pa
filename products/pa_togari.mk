@@ -44,4 +44,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6833 BUILD_FINGERPRINT=Sony/C6833_
 include vendor/pa/config/pa_addons.mk
 
 endif
-
