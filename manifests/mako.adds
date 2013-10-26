@@ -1,10 +1,10 @@
 [
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
+        "account":      "RemixPA",
         "repository":   "android_device_lge_mako",
         "target_path":  "device/lge/mako",
-        "revision":     "jb43"
+        "revision":     "jb4.3"
     },
     {
         "remote":       "github",
