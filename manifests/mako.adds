@@ -8,9 +8,9 @@
     },
     {
         "remote":       "github",
-        "account":      "ParanoidAndroid",
-        "repository":   "lge-kernel-mako",
-        "target_path":  "kernel/lge/mako",
-        "revision":     "jb43"
+        "account":      "CyanogenMod",
+        "repository":   "android_kernel_google_msm",
+        "target_path":  "kernel/google/msm",
+        "revision":     "cm-10.2"
     }
 ]
