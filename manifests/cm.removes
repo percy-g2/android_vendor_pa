@@ -2,9 +2,5 @@
     {
         "name":     "platform/external/openssh",
         "path":     "external/openssh"
-    },
-    {
-        "name":     "platform/packages/apps/SoundRecorder",
-        "path":     "packages/apps/SoundRecorder"
     }
 ]
