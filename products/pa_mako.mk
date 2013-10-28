@@ -22,13 +22,16 @@ PARANOID_BOOTANIMATION_NAME := XHDPI
 OVERLAY_TARGET := pa_xhdpi
 
 # Build paprefs from sources
-PREFS_FROM_SOURCE ?= true
+PREFS_FROM_SOURCE ?= false
 
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
 # Inherit AOSP device configuration
 $(call inherit-product, device/lge/mako/full_mako.mk)
+
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_mako
