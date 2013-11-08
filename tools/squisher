@@ -120,6 +120,10 @@ if [ -f "$ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img" 
     echo
     cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/boot.img $REPACK/ota/
     cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/system/ $REPACK/ota/system/
+    # introduce extra_cmd to execute extra command for kernel
+    if [ -f "$ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/extra_cmd" ];then
+        $ANDROID_BUILD_TOP/vendor/pa/prebuilt/kernel/$TARGET_PRODUCT/extra_cmd "$REPACK/ota"
+    fi
 fi
 
 # Pack it up and sign

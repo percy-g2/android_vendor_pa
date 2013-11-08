@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# TARGET is root folder which will be pack into update.zip from build system,you can use it as "/"
+
+TARGET=$1
+
+# Set your changes here
+rm $TARGET/system/bin/mpdecision
+rm $TARGET/system/bin/thermald
+rm $TARGET/system/etc/thermald.conf
