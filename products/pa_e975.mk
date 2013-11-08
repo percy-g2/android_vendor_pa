@@ -24,6 +24,9 @@ OVERLAY_TARGET := pa_e975
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
 
+# No official OTA for now
+NO_OTA_BUILD ?= false
+
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
 
