@@ -30,6 +30,9 @@ include vendor/pa/config/pa_common.mk
 # Inherit AOSP device configuration
 $(call inherit-product, device/lge/e975/e975.mk)
 
+# Include CM extras
+EXTRA_CM_PACKAGES ?= true
+
 # Override AOSP build properties
 PRODUCT_NAME := pa_e975
 PRODUCT_BRAND := lge
