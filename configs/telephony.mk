@@ -12,5 +12,8 @@ PRODUCT_COPY_FILES += \
 
 # SIM Toolkit
 PRODUCT_PACKAGES += \
-    Stk \
-    VoicePlus
+    Stk
+
+# Halo)))
+PRODUCT_PACKAGES += \
+    HALO
