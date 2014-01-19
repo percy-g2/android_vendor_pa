@@ -14,6 +14,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Stk
 
-# Halo)))
-PRODUCT_PACKAGES += \
-    HALO

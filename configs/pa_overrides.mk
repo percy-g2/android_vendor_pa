@@ -12,9 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# RemixPA Addon
 PRODUCT_PACKAGES += \
     Busybox \
-    Lightbulb
+    Lightbulb \
+    DSPManager \
+    libcyanogen-dsp \
+    HALO
 
 # Source or prebuilt PA-prefs logic
 #ifneq ($(PREFS_FROM_SOURCE),true)
