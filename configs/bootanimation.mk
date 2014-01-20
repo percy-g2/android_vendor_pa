@@ -45,6 +45,10 @@ ifeq (pa_d803,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
         vendor/pa/prebuilt/bootanimation/1920x1080.zip:system/media/bootanimation.zip
 endif
+ifeq (pa_e975,$(TARGET_PRODUCT))
+    PRODUCT_COPY_FILES += \
+        vendor/pa/prebuilt/bootanimation/1280x720.zip:system/media/bootanimation.zip
+endif
 ifeq (pa_galaxysmtd,$(TARGET_PRODUCT))
     PRODUCT_COPY_FILES += \
         vendor/pa/prebuilt/bootanimation/800x480.zip:system/media/bootanimation.zip
