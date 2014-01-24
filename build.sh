@@ -55,8 +55,13 @@ DEVICE="$1"
 MAJOR=$(cat $DIR/vendor/pa/vendor.mk | grep 'ROM_VERSION_MAJOR := *' | sed  's/ROM_VERSION_MAJOR := //g')
 MINOR=$(cat $DIR/vendor/pa/vendor.mk | grep 'ROM_VERSION_MINOR := *' | sed  's/ROM_VERSION_MINOR := //g')
 MAINTENANCE=$(cat $DIR/vendor/pa/vendor.mk | grep 'ROM_VERSION_MAINTENANCE := *' | sed  's/ROM_VERSION_MAINTENANCE := //g')
+TAG=$(cat $DIR/vendor/pa/vendor.mk | grep 'ROM_VERSION_TAG := *' | sed  's/ROM_VERSION_TAG := //g')
 
-VERSION=$MAJOR.$MINOR$MAINTENANCE
+if [ -n "$TAG" ]; then
+        VERSION=$MAJOR.$MINOR$MAINTENANCE-$TAG
+else
+        VERSION=$MAJOR.$MINOR$MAINTENANCE
+fi
 
 
 # Get start time
