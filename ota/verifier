@@ -1,7 +1,9 @@
 #!/sbin/sh
 
-RVERSION=`/system/bin/getprop ro.modversion`
-if [ "$RVERSION" == "$1" ];then
+RVERSION="`/system/bin/getprop ro.modversion`"
+ui_print "Get $RVERSION"
+TMP=`echo ${RVERSION#$1}`
+if [ "${#TMP}" = "1" ];then
     echo 0
 else
     echo 1
